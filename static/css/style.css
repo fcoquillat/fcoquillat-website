@@ -1,14 +1,15 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body, html {
-background-image: url('/Users/Xisco/Documents/My tings/fcoquillat-new-website/static/img/background.jpg');
+background-image: url(../img/bg.jpg);
 background-size: cover;
 background-attachment: fixed;
-font-size: 22px;
+font-size: 20px;
 font-weight: 300;
 line-height: 150%;
+background-position: 100%;
 }
 
 .coming-soon-header {
@@ -16,18 +17,15 @@ line-height: 150%;
 }
 
 h1 {
-  color: #40372c;
-  font-family: "Lustria", serif;
-  font-style: bold;
+  color: #ffffff;
+  font-family: "Roboto Condensed";
   font-size: 62px;
 }
 
-.emoji {
-  font-family: "Lato", sans-serif;
-  font-size: 68px;
-}
+
 
 .social img {
+  margin-top: 10px;
   margin-right: 5px;
   height: 45px;
 }
@@ -39,8 +37,12 @@ h1 {
   right: 5%;
 }
 
+.quotation i {
+  font-size: 16px;
+}
+
  .content {
-    color: black;
+    color: white;
     position: absolute;
     z-index: 0;
     left: 0;
@@ -58,8 +60,10 @@ h1 {
     -moz-osx-font-smoothing: grayscale;
     opacity: 1;
     visibility: visible;
+    
+ }
 
-    /*.global-overlay {
+    .global-overlay {
         position: fixed;
         top: 0;
         left: -100vw;
@@ -72,17 +76,101 @@ h1 {
     .overlay {
     position: fixed;
     overflow: hidden;
-     background-color: rgba(0,0,0,0.1);
+     background-color: rgba(0,0,0,0.3);
       height: 100%;
-      width: 68%;
+      width: 70%;
       position: relative;
       transform: skew(-25deg, 0deg);
-      margin-left: -15%;
+      margin-left: -20%;
     }
     .overlay.skew-part {
         -webkit-transform: skew(-25deg, 0deg);
         -moz-transform: skew(-25deg, 0deg);
         -ms-transform: skew(-25deg, 0deg);
         -o-transform: skew(-25deg, 0deg);
-        transform: skew(-55deg, 0deg);
-    }*/
+        transform: skew(-25deg, 0deg);
+    }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.content {
+  width: 98%;
+  padding: 0 3%;
+}
+    .overlay {
+      margin-left: -45%;
+    }
+
+    body, html {
+background-position: 70%;
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+.content {
+  width: 100%;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+    body, html {
+background-position: 70%;
+
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+    body, html {
+background-position: 70%;
+
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+.content {
+  width: 45%;
+}
+    body, html {
+background-position: 70%;
+
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+.content {
+  width: 45%;
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.content {
+  width: 45%;
+}
+}
