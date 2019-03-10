@@ -3,16 +3,15 @@ body {
 }
 
 html, body {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background3.png");
   background-repeat: no-repeat;
 background-color: #1F1F1F!important;
-background-size: 600px;
-background-position: top right;
+background-size: 500px;
+background-position: right top;
 background-attachment: fixed;
 font-size: 18px;
 font-weight: 300;
 line-height: 150%;
-background-position: 100%;
 }
 
 .tile.is-parent, .tile.is-ancestor {
