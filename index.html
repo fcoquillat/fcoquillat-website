@@ -6,6 +6,7 @@
   <title>Francisco Coquillat</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 </head>
@@ -14,27 +15,27 @@
   <section class="hero is-medium">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
-      <nav class="navbar">
+      <nav class="navbar is-transparent">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item has-text-light">
-              Text
+            <!-- Francisco Coquillat -->  
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span class="navbar-burger burger" data-target="navbarMenu" onclick="toggleBurger()" id="burger">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active has-text-light" href="https://fcoquillat.github.io">
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end has-text-weight-semibold">
+              <a class="navbar-item has-text-light" href="https://fcoquillat.github.io">
                 Work
               </a>
               <a class="navbar-item has-text-light" href="https://fcoquillat.github.io/aboutme.html">
                 About me
               </a>
-              <a class="navbar-item has-text-light" href="./static/Francisco_Coquillat_Resume.pdf">
+              <a class="navbar-item has-text-light" href="./static/Francisco_Coquillat_Resume.pdf" target="_blank">
                 Resume
               </a>
             </div>
@@ -47,84 +48,71 @@
     <div class="hero-body">
       <div class="container has-text-left">
         <h1 class="title has-text-light is-size-2">
-          Hi! I’m Francisco Coquillat</p>
+          Hi! I’m Francisco Coquillat</br>
           UI/UX Digital Product Designer </h1>
         </p>
         <h2 class="subtitle">
-          <img src="./static/img/mailicon.svg">
-          <img src="./static/img/mailicon.svg">
-          <img src="./static/img/mailicon.svg">
+          <a href="https://instagram.com/coquillatf/" target="_blank"><img src="./static/img/icon_ig.svg"></a>
+          &nbsp
+          <a href="https://www.linkedin.com/in/fcoquillat/" target="_blank"><img src="./static/img/icon_ld.svg"></a>
         </h2>
 
-<hr class="divider">
+        <hr class="divider">
         <div class="container">
-        <div class="title has-text-centered has-text-light">Work</div>
+          <div class="title has-text-centered has-text-light">Work</div>
 
-        <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-paddingless project1 is-child box">
-              <div class="overlay"><a href="fcoquillat.github.io">Read more</a></div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Foo</p>
-              <p class="subtitle">Bar</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-paddingless project1 is-child box">
-              <div class="overlay">test</div>
-            </article>
-          </div>
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-paddingless project project1 is-child box">
+                <div class="overlay has-text-centered"><a class="is-size-4 has-text-weight-semibold has-text-white-bis" href="fcoquillat.github.io">Read more</a></div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-paddingless project project2 is-child box">
+                <div class="overlay has-text-centered"><a class="is-size-4 has-text-weight-bold" href="fcoquillat.github.io">Read more</a></div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-paddingless project project2 is-child box">
+                <div class="overlay has-text-centered"><a class="is-size-4 has-text-weight-bold" href="fcoquillat.github.io">Read more</a></div>
+              </article>
+            </div>
 
+          </div>
         </div>
-      </div>
       </div>
 
     </div>
 
-  </div>
+    </div>
 
   </section>
 
 
-
-
-
-
-
+<!-- Footer -->
   <footer>
     <nav class="navbar">
       <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="./static/img/mailicon.svg">
-            <img src="./static/img/mailicon.svg">
-            <img src="./static/img/mailicon.svg">
+        <div class="">
+          <a class="navbar-item is-vcentered">
+            <a href="https://instagram.com/coquillatf/" target="_blank"><img class="is-black" src="./static/img/icon_ig.svg"></a>
+            &nbsp
+            <a href="https://www.linkedin.com/in/fcoquillat/" target="_blank"><img class="is-black" src="./static/img/icon_ld.svg"></a>
           </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active" href="https://fcoquillat.github.io">
-              Work
-            </a>
-            <a class="navbar-item" href="https://fcoquillat.github.io/aboutme.html">
-              About me
-            </a>
-            <a class="navbar-item" href="./static/Francisco_Coquillat_Resume.pdf">
-              Resume
-            </a>
-          </div>
-        </div>
-      </div>
     </nav>
   </footer>
+
 </body>
 
+
+<!-- Scripts -->
+<script>
+  const toggleBurger = () => {
+    let burgerIcon = document.getElementById('burger');
+    let dropMenu = document.getElementById('navbarMenu');
+    burgerIcon.classList.toggle('is-active');
+    dropMenu.classList.toggle('is-active');
+  };
+</script>
 </html>
